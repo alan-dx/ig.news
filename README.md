@@ -1,6 +1,6 @@
 # IG.NEWS
 
-## This project was developed during the Chapter III of Ignite, by @Rocketseat :rocket:
+### This project was developed during the Chapter III of Ignite, by @Rocketseat :rocket:
 
 :dart: The goal was to develop a blog about React news, with a authentication and payment system
   
