@@ -51,7 +51,6 @@ export default NextAuth({
         return {
           ...session,
           activeSubscription: null
-
         }
       }
 

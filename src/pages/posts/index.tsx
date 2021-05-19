@@ -5,6 +5,7 @@ import styles from './styles.module.scss'
 import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom'
 import Link from 'next/link'
+import { useState } from 'react'
 
 type Post = {
   slug: string;
@@ -18,6 +19,9 @@ interface PostsProps {
 }
 
 export default function Posts({ posts }: PostsProps) {
+
+  const [postsList, setPostsList] = useState(posts)
+
   return (
     <>
       <Head>
@@ -27,7 +31,7 @@ export default function Posts({ posts }: PostsProps) {
       <main className={styles.container}>
         <div className={styles.posts}>
           {
-            posts.map(post => (
+            postsList.map(post => (
               <Link href={`/posts/${post.slug}`}>
                 <a key={post.slug}>
                   <time>{post.updatedAt}</time>

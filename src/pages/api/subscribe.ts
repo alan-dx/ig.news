@@ -18,7 +18,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     
     const session = await getSession({ req })
 
-    const user = await fauna.query<User>(
+    const user = await fauna.query<User>(//TIPAGEM
       q.Get(
         q.Match(
           q.Index('user_by_email'),
