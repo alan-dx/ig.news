@@ -26,7 +26,7 @@ describe('Active Link component', () => {//o describe é utilizado quando deseja
       </ActiveLink>
     )
   
-    expect(getByText('Home')).toBeInTheDocument()//Indicando o resultado esperado no teste. getByText('Home') indica que, no retorno, deve existir o texto Home no componente
+    expect(getByText('Home')).toBeInTheDocument()//Indicando o resultado esperado no teste. getByText('Home') retorna o componente que tiver o texto Home
   
     // debug()//irá retornar uma espécie de console.log do html gerado pelo teste acima
   })
